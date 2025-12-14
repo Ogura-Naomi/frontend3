@@ -17,7 +17,7 @@ export default function CreatePage() {
             alert("IDは必須です"); 
             // 処理を中断
             return; 
-
+        }
     await createCustomer(formData);
     router.push(`./create/confirm?customer_id=${formData.get("customer_id")}`);
   };
